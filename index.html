@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,9 +8,29 @@
     <title>TOP-SignUp</title>
     <link rel="stylesheet" href="styles/main.css">
 </head>
-<body>
-    <h1>test</h1>
 
+<body>
+    <section class="side-bar">
+        <div class="title">
+            <img src="media/odin-logo.png" alt="">
+            <p>TOP</p>
+        </div>
+    </section>
+    <section class="main">
+        <p>This project one of <a href="https://www.theodinproject.com" target="_blank">TOP</a>'s project, which is a really good easy to follow web development road-map. I didn't think I would find something like this for free but I did.</p>
+        <div class="form-container">
+            <form action="" id="main-form">
+                <label>first name<input placeholder="first name" required type="text" name="first-name" ></label>
+                <label>last name<input placeholder="last name" required type="text" name="last-name" ></label>
+                <label>email<input placeholder="email address" required type="email" name="email" ></label>
+                <label>phone number<input placeholder="phone" required type="text" name="phone" ></label>
+                <label>password<input placeholder="password" required type="pasword" name="password" passwd-field></label>
+                <label>confirm password<input placeholder="confirm password" required type="pasword" name="conf-password" passwd-field></label>
+                <button form="main-form">create account</button>
+            </form>
+        </div>
+    </section>
     <script src="scripts/all.js"></script>
 </body>
+
 </html>

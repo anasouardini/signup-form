@@ -475,7 +475,7 @@ form {
   justify-content: space-between;
 }
 form label:nth-of-type(n+3) {
-  margin-top: 15px;
+  margin-top: 25px;
 }
 form label {
   font-weight: light;
@@ -483,6 +483,17 @@ form label {
   letter-spacing: 1px;
   color: #555;
   text-transform: uppercase;
+  display: relative;
+  transform: scale(1);
+}
+form label.error::before {
+  content: "passwords don't match";
+  position: absolute;
+  top: calc(100% + 5px);
+  left: 0;
+  color: red;
+  font-size: 0.6rem;
+  padding-left: 5px;
 }
 form input {
   font-size: 0.9rem;
